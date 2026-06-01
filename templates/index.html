@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>This is Peray, Your student budget tracker app!</title>
+</head>
+<body>
+
+        <h1>Expense Tracker</h1>
+        
+     <form method="POST">
+        <input name ="name" placeholder = "Expense Name">
+        <input name ="amount" placeholder="Amount">
+        <button type ="submit" >Add Expense</button>
+     </form>
+
+     <h2>Expenses</h2>
+
+     <ul>
+        {% for expense in expenses %}
+           <li>
+                {{ expense.name }} - ${{ expense.amount }}
+           </li>
+        {% endfor %}
+
+    </ul>
+
+     
+</body>
+</html>
