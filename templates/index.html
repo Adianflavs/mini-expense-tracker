@@ -6,11 +6,11 @@
 </head>
 <body>
 
-        <h1>Expense Tracker</h1>
+        <h1>Peray, Student Budget tracker</h1>
         
      <form method="POST">
-        <input name ="name" placeholder = "Expense Name">
-        <input name ="amount" placeholder="Amount">
+        <input name ="name" placeholder = "Sadiay gipalit nimo?">
+        <input name ="amount" placeholder= "Pila pud">
         <button type ="submit" >Add Expense</button>
      </form>
 
@@ -20,7 +20,7 @@
         {% for expense in expenses %}
            <li>
                 {{ expense.name }} - ${{ expense.amount }}
-           </li>
+           </li>=
         {% endfor %}
 
     </ul>
